@@ -1,16 +1,3 @@
-<p align="center">
-  <a href="https://x.com/GanatraSoham/?utm_campaign=github-readme" target="_blank">
-    <img src="./python/docs/imgs/follow_x.png" width="100%" alt="Follow me" />
-  </a>
-  <br /> <br />
-</p>
-<p align="center">
-  <a href="https://app.composio.dev/?utm_campaign=github-readme" target="_blank">
-    <img src="./python/docs/imgs/try_hosted.png" width="100%" alt="Sign up" />
-  </a>
-
-  <br /> <br />
-</p>
 <p>
   <a href="https://github.com/composiohq/composio/blob/master/README.md">EN</a> | <a href="https://github.com/composiohq/composio/blob/master/README-CN.md">CN</a> | <a href="https://github.com/composiohq/composio/blob/master/README-JP.md">JP</a>
 </p>
@@ -99,29 +86,18 @@
 - [🛡️ License](#️-license)
 - [💪 Thanks To All Contributors](#-thanks-to-all-contributors)
 
-## 🤔 Why Composio?
+## 🤔 What is Composio?
 
-We believe AI Based Agents/Workflows are the future.
-Composio is the best toolset to integrate AI Agents to best Agentic Tools and use them to accomplish tasks.
-
-<img alt="Illustration" src="./docs/imgs/banner.gif" style="border-radius: 5px"/>
-
-## 🔥 Key Features
-
-- **100+ Tools**: Support for a range of different categories
-
+Composio is a framework to connect your AI Agents and LLMs to a variety of tools.
+Composio lets your AI use,
   - **Software**: Do anything on GitHub, Notion, Linear, Gmail, Slack, Hubspot, Salesforce, & 90 more.
   - **OS**: Click anywhere, Type anything, Copy to Clipboard, & more.
   - **Browser**: Smart Search, Take a screenshot, MultiOn, Download, Upload, & more.
   - **Search**: Google Search, Perplexity Search, Tavily, Exa & more.
   - **SWE**: Ngrok, Database, Redis, Vercel, Git, etc.
   - **RAG**: Agentic RAG for any type of data on the fly!
+<img alt="Illustration" src="./docs/imgs/banner.gif" style="border-radius: 5px"/>
 
-- **Frameworks**: Use tools with agent frameworks like **OpenAI, Claude, LlamaIndex, Langchain, CrewAI, Autogen, Gemini, Julep, Lyzr**, and more in a single line of code.
-- **Managed Authorisation**: Supports six different auth protocols. _Access Token, Refresh token, OAuth, API Keys, JWT, and more_ abstracted out so you can focus on the building agents.
-- **Accuracy**: Get _up to 40% better agentic accuracy_ in your tool calls due to better tool designs.
-- **Embeddable**: Whitelabel in the backend of your applications managing Auth & Integrations for all your users & agents and maintain a consistent experience.
-- **Pluggable**: Designed to be extended with additional Tools, Frameworks and Authorisation Protocols very easily.
 
 ## 🚀 Getting Started with Python
 
@@ -264,6 +240,15 @@ To get started with the Composio SDK in Javascript, follow these steps:
 This will set up the Composio SDK and execute an agent that creates a GitHub issue using the provided instructions.
 
 For more details, refer to the [Composio SDK Documentation](https://docs.composio.dev/).
+
+## Advantages of Composio
+
+- **Frameworks**: Use tools with agent frameworks like **OpenAI, Claude, LlamaIndex, Langchain, CrewAI, Autogen, Gemini, Julep, Lyzr**, and more in a single line of code.
+- **Managed Authorisation**: Supports six different auth protocols. _Access Token, Refresh token, OAuth, API Keys, JWT, and more_ abstracted out so you can focus on the building agents.
+- **Accuracy**: Get _up to 40% better agentic accuracy_ in your tool calls due to better tool designs.
+- **Embeddable**: Whitelabel in the backend of your applications managing Auth & Integrations for all your users & agents and maintain a consistent experience.
+- **Pluggable**: Designed to be extended with additional Tools, Frameworks and Authorisation Protocols very easily.
+
 
 
 ## 💡 Examples
