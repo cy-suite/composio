@@ -186,7 +186,8 @@
           "patterns/actions/action-guide-with-agents",
           "patterns/actions/action-guide-without-agents",
           "patterns/actions/custom_actions",
-          "patterns/actions/action-guide-faqs"
+          "patterns/actions/action-guide-faqs",
+          "patterns/actions/action-guide-actionid"
         ]
       },
       {
