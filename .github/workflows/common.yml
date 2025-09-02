@@ -24,7 +24,7 @@ jobs:
       group: 'test:lock-check:${{ github.ref }}'
       cancel-in-progress: true
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
@@ -52,7 +52,7 @@ jobs:
       group: 'test:linter_checks:${{ github.ref }}'
       cancel-in-progress: true
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
@@ -84,7 +84,7 @@ jobs:
       group: 'test:common:${{ matrix.python-version }}:${{ github.ref }}'
       cancel-in-progress: true
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           submodules: recursive
           fetch-depth: 0
@@ -136,7 +136,7 @@ jobs:
       group: 'test:swe:${{ matrix.python-version }}:${{ github.ref }}'
       cancel-in-progress: true
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           submodules: recursive
           fetch-depth: 0
@@ -172,7 +172,7 @@ jobs:
         python-version: ["3.10"]
     timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           submodules: recursive
           fetch-depth: 0
