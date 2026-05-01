@@ -18,8 +18,8 @@ jobs:
         working-directory: ./python
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.10"
       - name: Build
@@ -54,9 +54,9 @@ jobs:
         working-directory: ./python
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.10"
       - name: Build plugins
@@ -87,9 +87,9 @@ jobs:
         working-directory: ./python/swe
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.10"
       - name: Build
@@ -114,8 +114,8 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+        uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.10"
       - name: Build for ${{ matrix.os }}
@@ -141,7 +141,7 @@ jobs:
           rm -rf bin/
       - if: matrix.os == 'ubuntu-latest' && github.event_name == 'release'
         name: Upload artifact
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           files: python/dist/composio-linux-amd64.zip
 
@@ -157,7 +157,7 @@ jobs:
           rm -rf bin/
       - if: matrix.os == 'macos-13' && github.event_name == 'release'
         name: Upload artifact
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           files: python/dist/composio-darwin-amd64.zip
 
@@ -173,7 +173,7 @@ jobs:
           rm -rf bin/
       - if: matrix.os == 'macos-14' && github.event_name == 'release'
         name: Upload artifact
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           files: python/dist/composio-darwin-arm64.zip
 
@@ -189,7 +189,7 @@ jobs:
       #     rm -rf bin/
       # - if: matrix.os == 'windows-latest' && github.event_name == 'release'
       #   name: Upload artifact
-      #   uses: softprops/action-gh-release@v2
+      #   uses: softprops/action-gh-release@v3
       #   with:
       #     files: python/dist/composio-win.zip
 
@@ -199,7 +199,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       - name: Docker login
         env:
           DOCKER_USER: ${{secrets.DOCKER_USER}}
@@ -211,7 +211,7 @@ jobs:
           docker run --privileged --rm tonistiigi/binfmt --install all
           docker buildx create --use --name multibuild
           docker buildx inspect --bootstrap
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.10"
       - name: Publishing tool server images
@@ -228,8 +228,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+        uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
       - name: Install E2B
         run: |
           npm install -g @e2b/cli@latest
